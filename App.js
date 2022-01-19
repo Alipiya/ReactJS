@@ -1,14 +1,14 @@
 import './App.css';
-import { Message, message } from './components';
+import { Logotip } from './components/logo';
+import { Message } from './components/message';
 
-function App() {
-  return (
-    <div className='App'>
-      <Message
-        messageProps={'А вот и наоборот :)'}>
-      </Message>
-    </div>
+
+export default function App() {
+  return (<div className='App'>
+    <Logotip
+      messageProps={'МЕССЕНДЖЕР'}>
+    </Logotip>
+    <Message></Message>
+  </div>
   )
-}
-
-export default App;
+};
