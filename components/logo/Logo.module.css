@@ -1,0 +1,21 @@
+.centrTopLogo {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.titleMessenger {
+   width: 300px;
+   height: 300px;
+   padding: 10px;
+   background-color: rgb(220, 205, 233);
+   color: rgb(81, 32, 93);
+   font-size: 30px;
+   border-radius: 50% 50%;
+   border: 1px solid rgb(81, 32, 93);
+}
+.titleMessengerMax {
+   color: #000;
+   line-height: 10px;
+   font-weight: bold;
+   font-size: 40px;
+}
