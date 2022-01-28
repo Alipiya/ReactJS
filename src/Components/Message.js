@@ -9,7 +9,7 @@ export default class Message extends Component {
 
   render() {
     const { message } = this.props;
-    const classname = `message ${message.sender === 'Я' ? 'message-me' : ''}`;
+    const classname = `message ${message.sender === 'me' ? 'message-me' : ''}`;
     return (
       <div className={classname}>
         <div className="message__author">{message.sender}</div>
