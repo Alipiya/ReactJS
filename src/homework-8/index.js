@@ -7,6 +7,7 @@ import {Home} from "./routes/Home";
 import {Chats} from "./routes/Chats";
 import {Profile} from "./routes/Profile";
 import {store, persistor} from './store'
+import {Animals} from "./routes/Animals";
 
 export const Homework = () => {
   return (
@@ -24,9 +25,13 @@ export const Homework = () => {
               <Button to="/chats" component={Link} color="inherit">
                 Chats
               </Button>
+              <Button to="/animals" component={Link} color="inherit">
+                animals
+              </Button>
             </Toolbar>
           </AppBar>
           <Switch>
+            <Route component={Animals} path="/animals"/>
             <Route component={Chats} path="/chats"/>
             <Route component={Profile} path="/profile"/>
             <Route component={Home} path="/"/>
