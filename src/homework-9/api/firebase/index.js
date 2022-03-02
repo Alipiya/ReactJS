@@ -1,23 +1,23 @@
 
-import firebase from "firebase";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyDUnPy61qVvEr9kzC8gQLHbSfuWSnVY5X4',
-  authDomain: 'geekbrains-lesson-9.firebaseapp.com',
-  databaseURL: 'https://geekbrains-lesson-9-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'geekbrains-lesson-9',
-  storageBucket: 'geekbrains-lesson-9.appspot.com',
-  messagingSenderId: '545293650430',
-  appId: '1:545293650430:web:37e402fbfad8b8459d58af'
+  apiKey: "AIzaSyBgQpeebfCaubUNCmwEyIviaGRMhdTcGSA",
+  authDomain: "reactjs-89c7c.firebaseapp.com",
+  databaseURL: "https://reactjs-89c7c-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "reactjs-89c7c",
+  storageBucket: "reactjs-89c7c.appspot.com",
+  messagingSenderId: "1026803842984",
+  appId: "1:1026803842984:web:40292a9224941d730da79d",
+  measurementId: "G-YNKEY0TJ53"
 };
 
-firebase.initializeApp(firebaseConfig);
-
-export const auth = firebase.auth();
-export const db = firebase.database();
-
-export const profileRef = db.ref("profile");
-
-export const chatsRef = db.ref("chats");
-
-export const messagesRef = db.ref("messages");
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
